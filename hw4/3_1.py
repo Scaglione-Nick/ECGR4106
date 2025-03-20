@@ -24,8 +24,8 @@ def load_data_from_txt(file_path):
         matches = re.findall(pattern, content)
 
         for match in matches:
-            english_sentences.append(match[0])  # English sentence
-            french_sentences.append(match[1])   # French sentence
+            english_sentences.append(match[1])  # English sentence
+            french_sentences.append(match[0])   # French sentence
 
     return english_sentences, french_sentences
 
